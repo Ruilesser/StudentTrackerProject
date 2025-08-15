@@ -10,21 +10,21 @@ using System.Windows.Forms;
 
 namespace StudentTracker
 {
-    public partial class FormMain : Form
+    public partial class FormFaculty : Form
     {
-        public FormMain()
+        public FormFaculty()
         {
             InitializeComponent();
         }
 
-        private void FormMain_Load(object sender, EventArgs e)
+        private void FormFaculty_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void exitBtn_Click(object sender, EventArgs e)
+        private void closeBtn_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
     }
 }
