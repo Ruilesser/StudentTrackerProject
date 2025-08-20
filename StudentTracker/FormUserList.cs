@@ -10,26 +10,26 @@ using System.Windows.Forms;
 
 namespace StudentTracker
 {
-    public partial class FacultyList : Form
+    public partial class FormUserList : Form
     {
-        public FacultyList()
+        public FormUserList()
         {
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void userBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = General.isNumber(e);
+        }
+
+        private void searchBtn_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void closeBtn_Click(object sender, EventArgs e)
+        private void facultyCmb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.Close();
-        }
 
-        private void deleteBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

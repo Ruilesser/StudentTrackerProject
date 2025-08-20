@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace StudentTracker
 {
-    public partial class FacultyList : Form
+    public partial class FormStatus : Form
     {
-        public FacultyList()
+        public FormStatus()
         {
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void FormStatus_Load(object sender, EventArgs e)
         {
 
         }
 
         private void closeBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void deleteBtn_Click(object sender, EventArgs e)
         {
             this.Close();
         }
