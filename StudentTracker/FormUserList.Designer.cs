@@ -29,6 +29,16 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            clearBtn = new Button();
+            searchBtn = new Button();
+            positionCmb = new ComboBox();
+            label4 = new Label();
+            facultyCmb = new ComboBox();
+            label3 = new Label();
+            surnameBox = new TextBox();
+            label2 = new Label();
+            nameBox = new TextBox();
+            label1 = new Label();
             userBox = new TextBox();
             UserLabel = new Label();
             dataGridView1 = new DataGridView();
@@ -37,16 +47,6 @@
             deleteBtn = new Button();
             updateBtn = new Button();
             addBtn = new Button();
-            label1 = new Label();
-            nameBox = new TextBox();
-            label2 = new Label();
-            surnameBox = new TextBox();
-            facultyCmb = new ComboBox();
-            label3 = new Label();
-            positionCmb = new ComboBox();
-            label4 = new Label();
-            searchBtn = new Button();
-            clearBtn = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
@@ -71,6 +71,103 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(900, 169);
             panel1.TabIndex = 0;
+            // 
+            // clearBtn
+            // 
+            clearBtn.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            clearBtn.Location = new Point(765, 60);
+            clearBtn.Name = "clearBtn";
+            clearBtn.Size = new Size(110, 39);
+            clearBtn.TabIndex = 6;
+            clearBtn.Text = "Clear";
+            clearBtn.UseVisualStyleBackColor = true;
+            // 
+            // searchBtn
+            // 
+            searchBtn.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            searchBtn.Location = new Point(765, 7);
+            searchBtn.Name = "searchBtn";
+            searchBtn.Size = new Size(110, 39);
+            searchBtn.TabIndex = 5;
+            searchBtn.Text = "Search";
+            searchBtn.UseVisualStyleBackColor = true;
+            searchBtn.Click += searchBtn_Click;
+            // 
+            // positionCmb
+            // 
+            positionCmb.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            positionCmb.FormattingEnabled = true;
+            positionCmb.Location = new Point(532, 60);
+            positionCmb.Name = "positionCmb";
+            positionCmb.Size = new Size(185, 39);
+            positionCmb.TabIndex = 4;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(403, 66);
+            label4.Name = "label4";
+            label4.Size = new Size(102, 31);
+            label4.TabIndex = 11;
+            label4.Text = "Position";
+            // 
+            // facultyCmb
+            // 
+            facultyCmb.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            facultyCmb.FormattingEnabled = true;
+            facultyCmb.Location = new Point(532, 7);
+            facultyCmb.Name = "facultyCmb";
+            facultyCmb.Size = new Size(185, 39);
+            facultyCmb.TabIndex = 3;
+            facultyCmb.SelectedIndexChanged += facultyCmb_SelectedIndexChanged;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(403, 13);
+            label3.Name = "label3";
+            label3.Size = new Size(90, 31);
+            label3.TabIndex = 9;
+            label3.Text = "Faculty";
+            // 
+            // surnameBox
+            // 
+            surnameBox.Font = new Font("Segoe UI", 14F);
+            surnameBox.Location = new Point(184, 114);
+            surnameBox.Name = "surnameBox";
+            surnameBox.Size = new Size(180, 39);
+            surnameBox.TabIndex = 2;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(4, 114);
+            label2.Name = "label2";
+            label2.Size = new Size(109, 31);
+            label2.TabIndex = 6;
+            label2.Text = "Surname";
+            // 
+            // nameBox
+            // 
+            nameBox.Font = new Font("Segoe UI", 14F);
+            nameBox.Location = new Point(184, 65);
+            nameBox.Name = "nameBox";
+            nameBox.Size = new Size(180, 39);
+            nameBox.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(4, 65);
+            label1.Name = "label1";
+            label1.Size = new Size(77, 31);
+            label1.TabIndex = 4;
+            label1.Text = "Name";
+            label1.Click += label1_Click;
             // 
             // userBox
             // 
@@ -152,102 +249,6 @@
             addBtn.TabIndex = 4;
             addBtn.Text = "Add";
             addBtn.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(4, 65);
-            label1.Name = "label1";
-            label1.Size = new Size(77, 31);
-            label1.TabIndex = 4;
-            label1.Text = "Name";
-            // 
-            // nameBox
-            // 
-            nameBox.Font = new Font("Segoe UI", 14F);
-            nameBox.Location = new Point(184, 65);
-            nameBox.Name = "nameBox";
-            nameBox.Size = new Size(180, 39);
-            nameBox.TabIndex = 1;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(4, 114);
-            label2.Name = "label2";
-            label2.Size = new Size(109, 31);
-            label2.TabIndex = 6;
-            label2.Text = "Surname";
-            // 
-            // surnameBox
-            // 
-            surnameBox.Font = new Font("Segoe UI", 14F);
-            surnameBox.Location = new Point(184, 124);
-            surnameBox.Name = "surnameBox";
-            surnameBox.Size = new Size(180, 39);
-            surnameBox.TabIndex = 2;
-            // 
-            // facultyCmb
-            // 
-            facultyCmb.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            facultyCmb.FormattingEnabled = true;
-            facultyCmb.Location = new Point(532, 7);
-            facultyCmb.Name = "facultyCmb";
-            facultyCmb.Size = new Size(185, 39);
-            facultyCmb.TabIndex = 3;
-            facultyCmb.SelectedIndexChanged += facultyCmb_SelectedIndexChanged;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(403, 13);
-            label3.Name = "label3";
-            label3.Size = new Size(90, 31);
-            label3.TabIndex = 9;
-            label3.Text = "Faculty";
-            // 
-            // positionCmb
-            // 
-            positionCmb.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            positionCmb.FormattingEnabled = true;
-            positionCmb.Location = new Point(532, 60);
-            positionCmb.Name = "positionCmb";
-            positionCmb.Size = new Size(185, 39);
-            positionCmb.TabIndex = 4;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(403, 66);
-            label4.Name = "label4";
-            label4.Size = new Size(102, 31);
-            label4.TabIndex = 11;
-            label4.Text = "Position";
-            // 
-            // searchBtn
-            // 
-            searchBtn.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            searchBtn.Location = new Point(765, 7);
-            searchBtn.Name = "searchBtn";
-            searchBtn.Size = new Size(110, 39);
-            searchBtn.TabIndex = 5;
-            searchBtn.Text = "Search";
-            searchBtn.UseVisualStyleBackColor = true;
-            searchBtn.Click += searchBtn_Click;
-            // 
-            // clearBtn
-            // 
-            clearBtn.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            clearBtn.Location = new Point(765, 60);
-            clearBtn.Name = "clearBtn";
-            clearBtn.Size = new Size(110, 39);
-            clearBtn.TabIndex = 6;
-            clearBtn.Text = "Clear";
-            clearBtn.UseVisualStyleBackColor = true;
             // 
             // FormUserList
             // 
