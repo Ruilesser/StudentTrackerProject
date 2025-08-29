@@ -17,5 +17,12 @@ namespace StudentTracker
         {
             Application.Exit();
         }
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+            FormMain frm = new FormMain();
+            this.Hide();
+            frm.ShowDialog();
+        }
     }
 }

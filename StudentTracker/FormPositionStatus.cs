@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace StudentTracker
 {
-    public partial class FormPositions : Form
+    public partial class FormPositionStatus : Form
     {
-        public FormPositions()
+        public FormPositionStatus()
         {
             InitializeComponent();
         }
 
-        private void addBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void deleteBtn_Click(object sender, EventArgs e)
+        private void FormStatus_Load(object sender, EventArgs e)
         {
 
         }

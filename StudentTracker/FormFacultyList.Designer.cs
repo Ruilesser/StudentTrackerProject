@@ -1,6 +1,6 @@
 ﻿namespace StudentTracker
 {
-    partial class FacultyList
+    partial class FormFacultyList
     {
         /// <summary>
         /// Required designer variable.
@@ -92,6 +92,7 @@
             updateBtn.TabIndex = 1;
             updateBtn.Text = "Update";
             updateBtn.UseVisualStyleBackColor = true;
+            updateBtn.Click += updateBtn_Click;
             // 
             // addBtn
             // 
@@ -102,15 +103,16 @@
             addBtn.TabIndex = 0;
             addBtn.Text = "Add";
             addBtn.UseVisualStyleBackColor = true;
+            addBtn.Click += addBtn_Click;
             // 
-            // FacultyList
+            // FormFacultyList
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(736, 450);
             Controls.Add(panel1);
             Controls.Add(dataGridView1);
-            Name = "FacultyList";
+            Name = "FormFacultyList";
             Text = "Faculty List";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel1.ResumeLayout(false);

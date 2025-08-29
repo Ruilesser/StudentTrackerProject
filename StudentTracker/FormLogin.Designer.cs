@@ -32,7 +32,7 @@
             userBox = new TextBox();
             label2 = new Label();
             PassBox = new TextBox();
-            enterBtn = new Button();
+            loginBtn = new Button();
             exitBtn = new Button();
             SuspendLayout();
             // 
@@ -73,15 +73,16 @@
             PassBox.Size = new Size(237, 39);
             PassBox.TabIndex = 3;
             // 
-            // enterBtn
+            // loginBtn
             // 
-            enterBtn.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            enterBtn.Location = new Point(287, 213);
-            enterBtn.Name = "enterBtn";
-            enterBtn.Size = new Size(154, 70);
-            enterBtn.TabIndex = 5;
-            enterBtn.Text = "Enter";
-            enterBtn.UseVisualStyleBackColor = true;
+            loginBtn.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            loginBtn.Location = new Point(287, 213);
+            loginBtn.Name = "loginBtn";
+            loginBtn.Size = new Size(154, 70);
+            loginBtn.TabIndex = 5;
+            loginBtn.Text = "Login";
+            loginBtn.UseVisualStyleBackColor = true;
+            loginBtn.Click += loginBtn_Click;
             // 
             // exitBtn
             // 
@@ -100,7 +101,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(571, 346);
             Controls.Add(exitBtn);
-            Controls.Add(enterBtn);
+            Controls.Add(loginBtn);
             Controls.Add(PassBox);
             Controls.Add(label2);
             Controls.Add(userBox);
@@ -118,7 +119,7 @@
         private TextBox userBox;
         private Label label2;
         private TextBox PassBox;
-        private Button enterBtn;
+        private Button loginBtn;
         private Button exitBtn;
     }
 }

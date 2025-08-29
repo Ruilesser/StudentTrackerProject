@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace StudentTracker
 {
-    public partial class FormSchedule : Form
+    public partial class FormSettings : Form
     {
-        public FormSchedule()
+        public FormSettings()
         {
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormSchedule_Load(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }
@@ -30,11 +25,6 @@ namespace StudentTracker
         private void closeBtn_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void updateBtn_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

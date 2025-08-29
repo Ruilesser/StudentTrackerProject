@@ -55,6 +55,7 @@
             userBtn.Text = "USER";
             userBtn.TextAlign = ContentAlignment.BottomCenter;
             userBtn.UseVisualStyleBackColor = false;
+            userBtn.Click += userBtn_Click;
             // 
             // imageList1
             // 
@@ -86,6 +87,7 @@
             scheduleBtn.Text = "SCHEDULE";
             scheduleBtn.TextAlign = ContentAlignment.BottomCenter;
             scheduleBtn.UseVisualStyleBackColor = false;
+            scheduleBtn.Click += scheduleBtn_Click;
             // 
             // courseBtn
             // 
@@ -101,6 +103,7 @@
             courseBtn.Text = "COURSES";
             courseBtn.TextAlign = ContentAlignment.BottomCenter;
             courseBtn.UseVisualStyleBackColor = false;
+            courseBtn.Click += courseBtn_Click;
             // 
             // settingsBtn
             // 
@@ -116,6 +119,7 @@
             settingsBtn.Text = "SETTINGS";
             settingsBtn.TextAlign = ContentAlignment.BottomCenter;
             settingsBtn.UseVisualStyleBackColor = false;
+            settingsBtn.Click += settingsBtn_Click;
             // 
             // facultyBtn
             // 
@@ -131,6 +135,7 @@
             facultyBtn.Text = "FACULTY";
             facultyBtn.TextAlign = ContentAlignment.BottomCenter;
             facultyBtn.UseVisualStyleBackColor = false;
+            facultyBtn.Click += facultyBtn_Click;
             // 
             // statusBtn
             // 
@@ -146,6 +151,7 @@
             statusBtn.Text = "STATUS";
             statusBtn.TextAlign = ContentAlignment.BottomCenter;
             statusBtn.UseVisualStyleBackColor = false;
+            statusBtn.Click += statusBtn_Click;
             // 
             // logOutBtn
             // 
@@ -161,6 +167,7 @@
             logOutBtn.Text = "LOG OUT";
             logOutBtn.TextAlign = ContentAlignment.BottomCenter;
             logOutBtn.UseVisualStyleBackColor = false;
+            logOutBtn.Click += logOutBtn_Click;
             // 
             // exitBtn
             // 
@@ -193,6 +200,7 @@
             Controls.Add(userBtn);
             Name = "FormMain";
             Text = "Student Portal";
+            FormClosed += FormMain_FormClosed;
             Load += FormMain_Load;
             ResumeLayout(false);
         }

@@ -10,47 +10,32 @@ using System.Windows.Forms;
 
 namespace StudentTracker
 {
-    public partial class FormUserList : Form
+    public partial class FormPositionList : Form
     {
-        public FormUserList()
+        public FormPositionList()
         {
             InitializeComponent();
         }
 
-        private void userBox_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = General.isNumber(e);
-        }
-
-        private void searchBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void facultyCmb_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void addBtn_Click(object sender, EventArgs e)
         {
-            FormUser form = new FormUser();
+            FormPositionStatus frm = new FormPositionStatus();
             this.Hide();
-            form.ShowDialog();
+            frm.ShowDialog();
             this.Visible = true;
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-            FormUser form = new FormUser();
+            FormPositionStatus frm = new FormPositionStatus();
             this.Hide();
-            form.ShowDialog();
+            frm.ShowDialog();
             this.Visible = true;
+        }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void closeBtn_Click(object sender, EventArgs e)

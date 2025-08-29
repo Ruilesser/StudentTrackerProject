@@ -1,6 +1,6 @@
 ﻿namespace StudentTracker
 {
-    partial class FormStatus
+    partial class FormPositionStatus
     {
         /// <summary>
         /// Required designer variable.

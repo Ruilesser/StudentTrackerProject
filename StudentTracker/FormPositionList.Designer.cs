@@ -1,6 +1,6 @@
 ﻿namespace StudentTracker
 {
-    partial class FormPositions
+    partial class FormPositionList
     {
         /// <summary>
         /// Required designer variable.
@@ -31,8 +31,8 @@
             dataGridView1 = new DataGridView();
             panel1 = new Panel();
             closeBtn = new Button();
-            deleteBtn = new Button();
             updateBtn = new Button();
+            deleteBtn = new Button();
             addBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
@@ -69,18 +69,7 @@
             closeBtn.TabIndex = 7;
             closeBtn.Text = "Close";
             closeBtn.UseVisualStyleBackColor = true;
-            closeBtn.Click += this.closeBtn_Click;
-            // 
-            // deleteBtn
-            // 
-            deleteBtn.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            deleteBtn.Location = new Point(368, 27);
-            deleteBtn.Name = "deleteBtn";
-            deleteBtn.Size = new Size(172, 59);
-            deleteBtn.TabIndex = 6;
-            deleteBtn.Text = "Delete";
-            deleteBtn.UseVisualStyleBackColor = true;
-            deleteBtn.Click += this.deleteBtn_Click;
+            closeBtn.Click += closeBtn_Click;
             // 
             // updateBtn
             // 
@@ -91,6 +80,18 @@
             updateBtn.TabIndex = 5;
             updateBtn.Text = "Update";
             updateBtn.UseVisualStyleBackColor = true;
+            updateBtn.Click += this.updateBtn_Click;
+            // 
+            // deleteBtn
+            // 
+            deleteBtn.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            deleteBtn.Location = new Point(368, 27);
+            deleteBtn.Name = "deleteBtn";
+            deleteBtn.Size = new Size(172, 59);
+            deleteBtn.TabIndex = 6;
+            deleteBtn.Text = "Delete";
+            deleteBtn.UseVisualStyleBackColor = true;
+            deleteBtn.Click += deleteBtn_Click;
             // 
             // addBtn
             // 
@@ -103,14 +104,14 @@
             addBtn.UseVisualStyleBackColor = true;
             addBtn.Click += addBtn_Click;
             // 
-            // FormPositions
+            // FormPositionList
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(734, 450);
             Controls.Add(panel1);
             Controls.Add(dataGridView1);
-            Name = "FormPositions";
+            Name = "FormPositionList";
             Text = "Position List";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel1.ResumeLayout(false);

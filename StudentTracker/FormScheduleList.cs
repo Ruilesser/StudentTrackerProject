@@ -51,5 +51,26 @@ namespace StudentTracker
         {
             adminPnl.Hide();
         }
+
+        private void UserLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            FormSchedule frm = new FormSchedule();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            FormSchedule frm = new FormSchedule();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

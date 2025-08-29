@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StudentTracker
 {
-    public partial class FacultyList : Form
+    public partial class FormFacultyList : Form
     {
-        public FacultyList()
+        public FormFacultyList()
         {
             InitializeComponent();
         }
@@ -30,6 +30,22 @@ namespace StudentTracker
         private void deleteBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            FormFaculty frm = new FormFaculty();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            FormFaculty frm = new FormFaculty();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
         }
     }
 }

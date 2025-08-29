@@ -219,6 +219,7 @@
             closeBtn.TabIndex = 7;
             closeBtn.Text = "Close";
             closeBtn.UseVisualStyleBackColor = true;
+            closeBtn.Click += closeBtn_Click;
             // 
             // deleteBtn
             // 
@@ -239,6 +240,7 @@
             updateBtn.TabIndex = 5;
             updateBtn.Text = "Update";
             updateBtn.UseVisualStyleBackColor = true;
+            updateBtn.Click += updateBtn_Click;
             // 
             // addBtn
             // 
@@ -249,6 +251,7 @@
             addBtn.TabIndex = 4;
             addBtn.Text = "Add";
             addBtn.UseVisualStyleBackColor = true;
+            addBtn.Click += addBtn_Click;
             // 
             // FormUserList
             // 
